@@ -96,6 +96,23 @@ a .span {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+}
+.link {
+    display: inline-block;
+}
+
+.link:hover:after,
+.link:focus::after {
+    display: block;
+    position: absolute;
+    content: '';
+    margin: 0 auto;
+    margin-top: 28px;
+    height: 4px;
+    width: 62px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
 }
 
 .link:hover, 
@@ -180,6 +197,15 @@ a .span {
     padding: 10px 32px;
     /*margin-bottom: 250px;*/
 }
+
+/*<div class="" id="">
+                    <form action="" class=""
+                        <h2>Оставьте свои данные, мы вам перезвоним</h2>
+                        <label for=""><b>mail</b></label>
+                        <input type="text" placeholder="" name="email" required>
+                        <button type="submit" class=""></button>
+                    </form>
+                </div>*/
 /*SECTION*/
 .section-one {
     padding-top: 44px;
@@ -270,6 +296,25 @@ a .span {
     justify-content: space-between;
     margin-top: 50px;
 }
+
+.app img {
+    position: relative;
+}
+
+.apps {
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+
+
 
 /*section second*/
 .section-second {
