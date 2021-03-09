@@ -97,6 +97,10 @@ a .span {
     line-height: 1.14;
     letter-spacing: 0.02em;
 
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay:  2000ms;
 }
 .link {
     display: inline-block;
@@ -108,7 +112,7 @@ a .span {
     position: absolute;
     content: '';
     margin: 0 auto;
-    margin-top: 28px;
+    margin-top: 29px;
     height: 4px;
     width: 62px;
     background-color: var(--accent-color);
@@ -123,6 +127,10 @@ a .span {
     display: block;
     display: flex;
     align-items: center;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts a {
@@ -195,17 +203,36 @@ a .span {
     border-radius: 4px;
     min-width: 200px;
     padding: 10px 32px;
-    /*margin-bottom: 250px;*/
 }
 
-/*<div class="" id="">
-                    <form action="" class=""
-                        <h2>Оставьте свои данные, мы вам перезвоним</h2>
-                        <label for=""><b>mail</b></label>
-                        <input type="text" placeholder="" name="email" required>
-                        <button type="submit" class=""></button>
-                    </form>
-                </div>*/
+.Vector {
+    left: 0px;
+    border-radius: 50%;
+}
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1600px;
+    height: 1024px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-height: 581px;
+    max-width: 528px;
+    background-color: var(--white-text);
+}
 /*SECTION*/
 .section-one {
     padding-top: 44px;
@@ -298,11 +325,25 @@ a .span {
 }
 
 .app img {
+    margin-bottom: 0;
+}
+.app {
     position: relative;
 }
 
 .apps {
     position: absolute;
+
+    right: 0;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    padding-top: 27px;
+}
+.apps h2{
+    padding: 0;
+    margin: 0;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -311,6 +352,7 @@ a .span {
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--white-text);
 
 }
 

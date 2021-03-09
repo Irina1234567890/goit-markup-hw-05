@@ -48,7 +48,19 @@
             <div class="container-hiro">
                 <div class="overlay">
                     <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br /> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                    <a href="#" class="button">Заказать услугу</a>
+                    <button class="button" data-modal-open>Заказать услугу</button>
+    
+                </div>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <h2>Оставьте свои данные, мы вам перезвоним</h2>
+                        <button data-modal-close>
+                            <svg class="Vector" width="11px" height="11px">
+                                <use href="./images/Vector.svg#Vector"></use>
+                            </svg>
+                        <button>
+        
+                    </div>
                 </div>
             </div>
         </section>
@@ -392,6 +404,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
