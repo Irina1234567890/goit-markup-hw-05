@@ -29,7 +29,7 @@ a {
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
-    position: relative;
+
 }
 .containerheader {
     display: flex;
@@ -105,17 +105,20 @@ a .span {
     display: inline-block;
 }
 
-.link::after {
-    display: inline-block;
+.current {
+    position: relative;
+    padding: 33px;
+}
+.current::after {
     position: absolute;
     content: '';
     left: 0;
-    bottom: 0;
+    bottom: -25px;
     height: 4px;
     width: 100%;
     background-color: var(--accent-color);
     border-radius: 2px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 }
 
 
@@ -469,6 +472,7 @@ img {
     height: inherit;
     width: inherit;
     fill: var( --social-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons li:not(:last-child) {
@@ -485,7 +489,6 @@ img {
     fill: var(--white-text);
     border-radius: 50%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-second .icon-seconde:hover,
 .icon-second .icon-seconde:focus {
@@ -540,6 +543,7 @@ img {
     min-width: 170px;
     height: 90px;
     fill: var(--social-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item a:hover,
@@ -549,7 +553,6 @@ img {
 
     border: 1px solid var(--accent-color);
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*footer*/
@@ -680,6 +683,8 @@ img {
     align-items: center;
     height: inherit;
     width: inherit;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 a .footer-icon {
     fill: var(--white-text);
@@ -698,7 +703,6 @@ a .footer-icon {
     fill: var(--white-text);
     border-radius: 50%;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons a{
