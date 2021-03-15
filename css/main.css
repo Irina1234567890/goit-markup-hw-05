@@ -107,13 +107,13 @@ a .span {
 
 .current {
     position: relative;
-    padding: 33px;
+    /*padding: 33px;*/
 }
 .current::after {
     position: absolute;
     content: '';
     left: 0;
-    bottom: -25px;
+    bottom: -33px;
     height: 4px;
     width: 100%;
     background-color: var(--accent-color);
