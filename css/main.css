@@ -27,7 +27,7 @@ a {
 }
 
 .header {
-    padding-top: 24px;
+    /*padding-top: 24px;*/
     /*padding-bottom: 25px;*/
 
 }
@@ -108,12 +108,15 @@ a .span {
 .current {
     position: relative;
     padding: 29px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .current::after {
     position: absolute;
     content: '';
     left: 0;
     bottom: 0;
+    display: block;
     height: 4px;
     width: 100%;
     background-color: var(--accent-color);
